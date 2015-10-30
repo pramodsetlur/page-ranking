@@ -1,0 +1,6 @@
+https://wiki.apache.org/nutch/NutchTutorial#A4._Setup_Solr_for_search
+
+A slight modification is: They ask us to add the following line:
+<field name="content" type="text" stored="true" indexed="true"/>
+
+But type="text" doesn't work. Make it is as "text_general". Then run bin/nutch solrindex yadi-yada...
